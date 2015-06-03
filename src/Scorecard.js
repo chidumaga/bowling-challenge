@@ -1,7 +1,5 @@
-bowl = new Game();
-
 function Scorecard(){
-  this.score;
+  this.score = 0;
 }
 
 Scorecard.prototype.calculateScore = function(arg) {

@@ -11,10 +11,10 @@ describe('A game of bowling', function(){
 
   it('consists of a game with regular scoring', function(){
 
-    bowl.hitPins(4);
-    bowl.hitPins(5);
+    scorecard.addToScores(bowl.hitPins(4));
+    scorecard.addToScores(bowl.hitPins(5));
 
-    game.calculateScore();
+    game.calculateScore(scorecard, scorecard.scores);
 
     expect(scorecard.score).toEqual(9);
   })

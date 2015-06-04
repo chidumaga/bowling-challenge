@@ -1,7 +1,10 @@
 function Scorecard(){
   this.score = 0;
+  this.scores = [];
 }
 
-Scorecard.prototype.calculateScore = function(arg) {
-  this.score = arg;
-};
+Scorecard.prototype.addToScores = function(bowl){
+
+  this.scores.push(bowl);
+
+}
